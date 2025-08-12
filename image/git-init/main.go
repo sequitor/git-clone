@@ -18,7 +18,7 @@ package main
 import (
 	"flag"
 
-	"github.com/tektoncd-catalog/git-clone/git-init/git"
+	"github.com/sequitor/git-clone/git-init/git"
 	"github.com/tektoncd/pipeline/pkg/apis/pipeline/v1beta1"
 	"github.com/tektoncd/pipeline/pkg/termination"
 	"go.uber.org/zap"

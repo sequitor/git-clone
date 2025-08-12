@@ -2,4 +2,4 @@ defaultBaseImage: cgr.dev/chainguard/static
 baseImageOverrides:
   # git-init uses a base image that includes Git, and supports running either
   # as root or as user nonroot with UID 65532.
-  github.com/tektoncd-catalog/git-clone/image/git-init: cgr.dev/chainguard/git
+  github.com/sequitor/git-clone/image/git-init: cgr.dev/chainguard/git

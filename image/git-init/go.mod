@@ -1,4 +1,4 @@
-module github.com/tektoncd-catalog/git-clone/git-init
+module github.com/sequitor/git-clone/git-init
 
 go 1.23.0
 
