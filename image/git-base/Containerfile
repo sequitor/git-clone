@@ -1,0 +1,11 @@
+FROM registry.access.redhat.com/ubi9/ubi-minimal
+
+RUN microdnf -y install git-core && \
+    groupadd -g 65532 git && \
+    useradd -d /home/git -g 65532 -u 65532 -m -s /bin/bash git && \
+    chgrp -R 0 /home/git && \
+    chmod -R g=u /home/git
+
+USER 65532
+
+ENTRYPOINT ["/bin/bash"]
